@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Corso MySQL</title>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="Style.css">
+		<link rel="stylesheet" href="styleEserciziSQL.css">
+	<link rel="stylesheet" href="StyleHeaderFooter.css">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body onload="userAction()">
+	 <!-- HEADER -->
+
+    <header class="header">
+    
+        <div class="container">
+            <div class="header__inner">
+                <!-- da aggiungere il link per l'immagine del logo nel src-->
+                <a class="header__logo" href="/">
+                   <!--  <img src="logoSenzaSfondo.png" alt=""> -->
+                </a>
+                <!-- navigazione menu -->
+                <nav class="nav">
+                    <a class="nav__link" href="/info">Impara</a>
+                    <a class="nav__link" href="/lezioni/esercizi">Corsi</a>
+                    <a class="nav__link" href="/certificazione">Certificazione</a>
+                  
+                    
+                </nav>
+            </div>
+        </div>
+    </header>
+<div class="container">
+	<div id="contenitore"> 
+	</div>
+
+	<br>
+
+	<script type="text/javascript">
+		const userAction = async () => {
+			const response = await fetch('http://localhost:8080/lezioni/eserciziSQL')
+			const myJson = await response.json();
+			console.log(myJson)
+			var el = document.getElementById('contenitore');
+			var h1 = document.createElement("h1")
+			h1.textContent = "Esercizi MySQL"
+			el.appendChild(h1)
+			const raggruppamento = document.createElement("div");
+
+			for (var i = 0; i < myJson.length; i++) {
+				var link = document.createElement('a');
+				var separatore = document.createElement("br");
+				
+				raggruppamento.setAttribute("id", "raggruppamento");
+				link.textContent = "Esercizio " + myJson[i].id;
+				link.href = "/lezioni/leggi?id=" + myJson[i].id;
+				
+				raggruppamento.appendChild(link)
+				raggruppamento.appendChild(separatore)
+			}
+			el.appendChild(raggruppamento);
+
+			// do something with myJson
+		}
+	</script>
+	</div>
+	<footer>
+ 	<div class="container">
+ 		<div class="footer-content">
+ 		 	<h3>FastCode </h3>
+            <p>Con il nostro sito puntiamo a migliorare la scrittura su tastiera di programmatori e di chiunque voglia migliorare la propria dattilografia.</p>
+            <ul class="socials">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container bottom__container">
+    
+            <p>copyright &copy; <a href="/">FastCode</a>  </p>
+            <div class="footer-menu">
+              <ul class="f-menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="/info">Impara</a></li>
+                <li><a href="">About us</a></li>
+               
+              </ul>
+            </div>
+        </div>
+    </div>
+    
+</footer>
+</body>
+
+</html>

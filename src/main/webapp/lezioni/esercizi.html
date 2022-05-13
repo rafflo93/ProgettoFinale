@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Elenco degli esercizi</title>
+
+</head>
+<body onload="userAction()">
+<a href="/home.html">HOME</a>
+<h1>Elenco degli esercizi Sql Base</h1>
+
+<div id="contenitore">
+</div>
+
+
+     
+
+<br>
+
+<textarea name="bloccotesto">Scrivi qui il tuo testo</textarea>>
+
+<script type="text/javascript">
+const userAction = async () => {
+	  const response = await fetch('http://localhost:8080/esercizio/count/sqlbase')
+	  const myJson = await response.json();
+	  console.log(myJson)
+	  var el = document.getElementById('contenitore');
+	  
+	  for(var i = 1;i<myJson.length;i++){
+		  var link = document.createElement('a');
+		  var separatore = document.createElement("br");
+		  link.textContent = "Esercizio "+ myJson[i].id;
+		  link.href="/esercizio/leggi?id="+myJson[i].id;
+		  el.appendChild(link)
+		  el.appendChild(separatore)
+	  }
+	  
+	  const responsejava = await fetch('http://localhost:8080/esercizio/count/javabase')
+	  const myJsonjava = await responsejava.json();
+	  console.log(myJsonjava)
+	  var el = document.getElementById('contenitore');
+	  var h1= document.createElement("h1")
+	  h1.textContent= "Esercizi Java Base" 
+	  el.appendChild(h1)
+	  for(var j = 1;j<myJsonjava.length;j++){
+		  var link = document.createElement('a');
+		  var separatore = document.createElement("br");
+		  link.textContent = "Esercizio "+ myJsonjava[j].id;
+		  link.href="/esercizio/leggi?id="+myJsonjava[j].id;
+		  el.appendChild(link)
+		  el.appendChild(separatore)
+	  }
+	  // do something with myJson
+	}
+</script>
+</body>
+</html>

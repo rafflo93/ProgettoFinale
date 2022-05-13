@@ -1,0 +1,70 @@
+body {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: auto;
+}
+
+header {
+    width: 90vw;
+    height: 100px;
+    background-color: rgb(44, 44, 49);
+    color: white;
+    padding-left: 30px;
+}
+
+footer {
+    width: 99vw;
+    height: 200px;
+    background-color: rgb(44, 44, 49);
+    color: white;
+}
+
+#spiegazioni {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 600px;
+}
+
+.sezione {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    width: 1000px;
+    align-self: center;
+}
+
+button {
+    width: 250px;
+    height: 70px;
+    align-self: center;
+    background-color: orangered;
+    border: 2px solid orange;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    border-radius: 10px;
+    margin: 50px;
+}
+
+button:hover {
+    background-color: rgb(206, 190, 8);
+}
+
+p {
+    font-size: larger;
+}
+
+h3,
+#firma {
+    align-self: center;
+}
+
+#sez2 {
+    margin-top: 0px;
+}

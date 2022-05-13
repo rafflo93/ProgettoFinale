@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleEsercizio2.css">
+    <script src="scriptEsercizio.js" defer></script>
+    <title>Esercizio</title>
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <img src="img/logoSenzaSfondo.png" id="img">
+        </div>
+        <div id="sinistra">
+            <button id="riprova">Riprova</button>
+            <div id="errori">Errori: 0</div>
+            <div id="cronometro"></div>
+        </div>
+    </header>
+    <div id="contenitore">
+        <div id="schermo">[testo]</div>
+        <div id="spazioNascosto" type="hidden"> </div>
+    </div>
+
+    <div id="tastiera">
+        <div class="fila">
+            <button class="doppio" id="slash">
+                <span class="conShift">|</span> <!-- è sbagliato inserire una <p> in un button -->
+                <span class="principale">\</span>
+            </button>
+            <button class="doppio" id="uno">
+                <span class="conShift">!</span>
+                <span class="principale">1</span>
+            </button>
+            <button class="doppio" id="due">
+                <span class="conShift">"</span>
+                <span class="principale">2</span>
+            </button>
+            <button class="doppio" id="tre">
+                <span class="conShift">£</span>
+                <span class="principale">3</span>
+            </button> <button class="doppio" id="quattro">
+                <span class="conShift">$</span>
+                <span class="principale">4</span>
+            </button>
+            <button class="doppio" id="cinque">
+                <span class="conShift">%</span>
+                <span class="principale">5</span>
+            </button>
+            <button class="doppio" id="sei">
+                <span class="conShift">&</span>
+                <span class="principale">6</span>
+            </button>
+            <button class="doppio" id="sette">
+                <span class="conShift">/</span>
+                <span class="principale">7</span>
+            </button>
+            <button class="doppio" id="otto">
+                <span class="conShift">(</span>
+                <span class="principale">8</span>
+            </button>
+            <button class="doppio" id="nove">
+                <span class="conShift">)</span>
+                <span class="principale">9</span>
+            </button>
+            <button class="doppio" id="zero">
+                <span class="conShift">=</span>
+                <span class="principale">0</span>
+            </button>
+            <button class="doppio" id="interr">
+                <span class="conShift">?</span>
+                <span class="principale">'</span>
+            </button>
+            <button class="inutile">...</button>
+            <button id="cancella">Backspace</button>
+        </div>
+        <div class="fila">
+            <button id="tab">TAB</button>
+            <button id="q">Q</button>
+            <button id="w">W</button>
+            <button id="e">E</button>
+            <button id="r">R</button>
+            <button id="t">T</button>
+            <button id="y">Y</button>
+            <button id="u">U</button>
+            <button id="i">I</button>
+            <button id="o">O</button>
+            <button id="p">P</button>
+            <button class="triplo" id="eAcc">
+                <span class="principale">è</span>
+                <span class="conAltGr">[</span>
+            </button>
+            <button class="triplo" id="piu">
+                <span class="principale">+</span>
+                <span class="conAltGr">]</span>
+            </button>
+            <button class="inutile">...</button>
+        </div>
+        <div class="fila">
+            <button id="maiusc">MAIUSC</button>
+            <button id="a">A</button>
+            <button id="s">S</button>
+            <button id="d">D</button>
+            <button id="f">F</button>
+            <button id="g">G</button>
+            <button id="h">H</button>
+            <button id="j">J</button>
+            <button id="k">K</button>
+            <button id="l">L</button>
+            <button class="triplo" id="oAcc">
+                <span class="principale">ò</span>
+                <span class="conAltGr">@</span>
+            </button>
+            <button class="inutile">...</button>
+            <button id="enter">Invio</button>
+        </div>
+        <div class="fila">
+            <button class="shift" id="sh1">SHIFT</button>
+            <button id="z">Z</button>
+            <button id="x">X</button>
+            <button id="c">C</button>
+            <button id="v">V</button>
+            <button id="b">B</button>
+            <button id="n">N</button>
+            <button id="m">M</button>
+            <button class="doppio" id="virg">
+                <span class="conShift">;</span>
+                <span class="principale">,</span>
+            </button>
+            <button class="doppio" id="punto">
+                <span class="conShift">:</span>
+                <span class="principale">.</span>
+            </button>
+            <button class="doppio" id="tratt">
+                <span class="conShift">_</span>
+                <span class="principale">-</span>
+            </button>
+            <button class="shift" id="sh2">SHIFT</button>
+        </div>
+        <div class="fila">
+            <button id="ctrl">ctrl</button>
+            <button class="inutile">...</button>
+            <button class="inutile">...</button>
+            <button class="inutile">alt</button>
+            <button id="spazio"></button>
+            <button id="altGr">altGr</button>
+            <button class="doppio" id="unc">
+                <span class="conShift">&gt;</span>
+                <span class="principale">&lt;</span>
+            </button>
+        </div>
+    </div>
+
+</body>
+
+</html>

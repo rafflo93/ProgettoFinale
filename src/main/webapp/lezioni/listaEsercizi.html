@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="StyleHeaderFooter.css">
+    <link rel="stylesheet" href="StyleListaEsercizi.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Scegli un linguaggio</title>
+   
+</head>
+
+
+<body>
+
+  [header]
+  <div class="container intro" >
+  <div class="conteiner__corso">
+        <div class="corso__img__java"> </div>
+        <!--<img alt="" src="img/javaLogo2.png">-->
+	    <button class="btn nav__btn btn--oranged" onclick="window.location.href='eserciziJava.html';">Corso Java</button>
+	    </div>
+	    <div class="conteiner__corso">
+	    <div class="corso__img__sql">
+	    <!--  <img alt=""id="sql" src="img/sqlLogo.png">-->
+	    </div>
+	    <button class="btn nav__btn btn--oranged" onclick="window.location.href='eserciziSQL.html';">Corso SQL</button>
+	    </div>
+	    <script> window.onload = function() {
+		    if(!window.location.hash) {
+		        window.location = window.location + '#loaded';
+		        window.location.reload();
+		    }
+		}</script>
+		</div>
+	[footer]
+</body>
+
+</html>

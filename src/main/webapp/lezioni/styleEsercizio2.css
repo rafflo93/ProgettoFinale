@@ -1,0 +1,155 @@
+body {
+    margin: 0px;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(#32add6, #080813);
+}
+
+header {
+    width: 100%;
+    max-width: 1750px;
+    height: 100px;
+    background-color: #111012;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: space-between;
+}
+
+#schermo {
+    width: 500px;
+    height: 100px;
+    border: 5px solid white;
+    padding: 10px;
+    margin: 90px;
+    background-color: white;
+    color: gray;
+    position: relative;
+    top: 0;
+    left: 0;
+    font-size: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+}
+
+#tastiera {
+    border: 2px solid gainsboro;
+    border-radius: 5px;
+    width: 850px;
+    height: 300px;
+    padding: 5px;
+    background-color: gainsboro;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-evenly;
+    background-color: #111012;
+}
+
+.fila {
+    display: flex;
+    gap: 5px;
+}
+
+button {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #111012;
+    color: white;
+}
+
+#cancella {
+    width: 120px;
+}
+
+#spazio {
+    width: 400px;
+}
+
+.shift {
+    width: 120px;
+}
+
+#maiusc {
+    width: 80px;
+}
+
+#enter {
+    width: 110px;
+}
+
+#tab {
+    width: 80px;
+}
+
+.doppio {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-bottom: 15px;
+}
+
+.triplo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 13px;
+}
+
+.conShift {
+    opacity: 50%;
+    align-self: flex-start;
+}
+
+.conAltGr {
+    opacity: 50%;
+    align-self: flex-end;
+}
+
+#cronometro,
+#errori {
+    font-size: 40px;
+    align-self: center;
+}
+
+#logo {
+    display: flex;
+}
+
+img {
+    align-self: center;
+    margin-left: 30px;
+    width: 70%;
+}
+
+img:hover {
+    cursor: pointer;
+}
+
+#riprova {
+    opacity: 0;
+    background-color: #ff581c;
+    font-weight: 700;
+    width: 100px;
+    border: 2px solid #ff581c;
+    align-self: center;
+    font-size: 20px;
+}
+
+#riprova:hover {
+    background-color: #e86113;
+}
+
+#sinistra {
+    display: flex;
+    gap: 50px;
+    margin-right: 30px;
+}

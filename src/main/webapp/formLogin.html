@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="StyleHeaderFooter.css">
+    <link rel="stylesheet" href="styleFormLogin.css">
+</head>
+<body>
+
+[header]
+
+
+
+<div class="container">
+    <form action="/login" method="get">
+        <div class="form__container">
+            <label for="username"><b>Username</b></label> <input type="text"
+                placeholder="Inserisci username" name="username" required> <label
+                for="password"><b>Password</b></label> <input type="password"
+                placeholder="Inserisci password" name="password" required>
+
+            <button type="submit">Login</button>
+            <label> <input type="checkbox" checked="checked"
+                name="remember"> Ricordami
+            </label>
+        </div>
+
+        <div class="form__container" style="background-color: #f1f1f1">
+            <button type="reset" class="cancelbtn" >Svuota campi</button>
+            <span class="psw">Hai dimenticato la <a href="#">password?</a></span>
+        </div>
+        <div class="form__container sigup">
+                Non hai un account? <a href="/registrati">Registrati</a>.
+        </div>
+    </form>
+</div>
+
+
+[footer]
+</body>
+</html>

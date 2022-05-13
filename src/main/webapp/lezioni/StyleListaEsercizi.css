@@ -1,0 +1,56 @@
+
+body{
+background-color: rgb(50, 173, 214);
+}
+.intro {
+	padding-top:120px;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-content:center;
+	gap:50px;
+
+}
+button{
+    align-self:center;
+	
+}
+.intro{
+	margin-bottom:50px;
+}
+.conteiner__corso{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	width:200px;
+	height:250px;
+	background-color: white;
+	align-self:center;
+	border-radius: 30px;
+	box-shadow: 0 8px 16px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+
+.corso__img__sql{
+	background:url(img/sqlLogo.png) no-repeat;
+	background-size:cover;
+	width:180px;
+	height:180px;
+	margin:5px auto;
+}
+
+.corso__img__java{
+	background:url(img/javaLogo2.png) no-repeat;
+	background-size:cover;
+	width:180px;
+	height:180px;
+	margin:5px auto;
+}
+
+img{
+max-width: 70px;
+    align-self: center;	
+}
+
+#sql{
+	width:100px;
+}

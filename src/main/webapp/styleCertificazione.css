@@ -1,0 +1,113 @@
+body{
+    margin: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14;
+    color: black;
+
+    -webkit-font-smoothing: antialiased;
+
+    background-color: rgb(255, 255, 255);
+    
+    display: flex;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
+
+p{
+    margin: 0 0 10px;
+}
+
+
+.intro{
+    display: flex;
+    /*
+    justify-content: center; 
+    */
+    background-size: contain;
+
+    width: 100%;
+}
+
+.background{
+    
+    margin: auto;
+    
+}  
+
+
+.nome{
+    color: #00c2cb;
+    position: absolute;
+    font-family: 'Fredoka One', cursive;
+    font-weight: 800;
+    font-size: 51px;
+
+    padding-left: 97px;
+    padding-top: 160px;  
+    justify-content: left;
+}
+
+.speed{
+    color: #FF914D;
+    position: absolute;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 37px;
+    font-weight: 800;
+
+    padding-left: 138px;
+    padding-top: 390px;  
+    justify-content: left;
+
+}
+
+.accurancy{
+    color: #FF914D;
+    position: absolute;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 37px;
+    line-height: 1.1;
+    font-weight: 800;
+
+    padding-left: 294px;
+    padding-top: 403px;  
+    justify-content: left;
+}
+
+.netSpeed{
+    color: #FF914D;
+    position: absolute;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 37px;
+    line-height: 1.1;
+    font-weight: 800;
+
+    padding-left: 528px;
+    padding-top: 395px;  
+    justify-content: left;
+}
+
+.date{
+    color: #442816;
+    position: absolute;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    font-size: 27px;
+
+    padding-left: 365px;
+    padding-top: 568px;  
+    justify-content: left;
+}
+
+.img{
+    height: 670px;
+    
+	box-shadow: 0 8px 16px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+} 

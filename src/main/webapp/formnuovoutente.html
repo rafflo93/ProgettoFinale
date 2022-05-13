@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	 <!-- collegamento al file css con href nel quale indico il percorso-->
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="StyleHeaderFooter.css">
+    <link rel="stylesheet" href="styleFormNuovoUtente.css">
+    
+</head>
+<body>
+[header]
+<div class="container">
+    <form action="/utente/inserisciutente">
+        <div class="form__container">
+
+            <label for="username"><b>Username</b></label>
+            <input type="text" placeholder="Inserisci Username" name="username" id="username" required>
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Inserisci Email" name="email" id="email" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Inserisci Password" name="password" id="password" required>
+
+            <label for="psw-repeat"><b>Ripeti la Password</b></label>
+            <input type="password" placeholder="Ripeti Password" name="psw-repeat" id="psw-repeat" required>
+            <hr>
+            <p>Creando il tuo account, acconsenti ai nostri <a href="#">Termini & Condizioni</a>.</p>
+
+            <button type="submit" class="registerbtn">Registrati</button>
+
+
+            <div class="form__container signin">
+                <p>Hai già un account? <a href="/formlogin">Fai il Login</a>.</p>
+            </div>
+        </div>
+    </form>
+</div>
+[footer]
+</body>
+</html>
